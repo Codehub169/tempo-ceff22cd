@@ -1,0 +1,21 @@
+{
+  "name": "simple-expense-tracker",
+  "version": "1.0.0",
+  "description": "A simple expense tracker app built with HTML, CSS, and JavaScript. Allows users to input expenses, view a list of expenses, see the total, and persist data using localStorage.",
+  "main": "script.js",
+  "scripts": {
+    "start": "echo \"Open index.html in your browser to run the application.\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expense-tracker",
+    "javascript",
+    "html",
+    "css",
+    "frontend",
+    "localStorage",
+    "vanilla-js"
+  ],
+  "author": "AI Assistant (Gemini)",
+  "license": "ISC"
+}

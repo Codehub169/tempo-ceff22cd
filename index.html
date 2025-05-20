@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-wallet"></i> Expense Tracker</h1>
+        </header>
+
+        <main>
+            <section class="input-section card">
+                <h2><i class="fas fa-plus-circle"></i> Add New Expense</h2>
+                <form id="expense-form">
+                    <div class="form-group">
+                        <label for="description">Description</label>
+                        <input type="text" id="description" placeholder="e.g., Coffee, Groceries" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="amount">Amount ($)</label>
+                        <input type="number" id="amount" placeholder="e.g., 15.50" step="0.01" min="0.01" required>
+                    </div>
+                    <button type="submit" class="btn add-btn"><i class="fas fa-plus"></i> Add Expense</button>
+                </form>
+            </section>
+
+            <section class="expenses-overview card">
+                <div class="expenses-list-header">
+                    <h2><i class="fas fa-list-ul"></i> Your Expenses</h2>
+                    <button id="clear-all-btn" class="btn clear-btn" title="Clear All Expenses"><i class="fas fa-trash-alt"></i> Clear All</button>
+                </div>
+                <ul id="expense-list">
+                    <!-- Expense items will be dynamically added here -->
+                </ul>
+                <p id="no-expenses-message" class="empty-state-message">No expenses added yet. Start tracking!</p>
+            </section>
+
+            <section class="total-section card">
+                <h2><i class="fas fa-coins"></i> Total Expenses</h2>
+                <p class="total-amount-display">$<span id="total-amount">0.00</span></p>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Expense Tracker App. Keep your finances in check!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
