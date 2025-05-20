@@ -31,14 +31,17 @@ header {
 }
 
 header h1 {
-    color: #2c3e50; /* Dark blue */
     font-size: 2.2em;
     margin: 0;
+    background-image: linear-gradient(to right, #00FF00, #90EE90); /* Green gradient (e.g.) */
+    color: transparent;
+    -webkit-background-clip: text; /* For wider browser support with background-clip: text */
+    background-clip: text;
 }
 
 header h1 i {
     margin-right: 10px;
-    color: #3498db; /* Primary blue */
+    color: #3498db; /* Primary blue - Icon color remains, not part of this specific change request */
 }
 
 /* Card styling for sections */
